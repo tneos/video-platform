@@ -1,36 +1,81 @@
 html {
-    background: url("img/cinema.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url("img/cinema.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 body {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .navbar {
-    background-color: #F5A34B !important;
-    font-family: 'Marmelad', sans-serif;
+  background-color: #f5a34b !important;
+  font-family: "Marmelad", sans-serif;
+}
+.navbar-brand {
+  font-family: "Bangers", cursive;
 }
 .videos {
-    width: 70%;
-    height: 60vh;
-    margin: 10% auto;
-    background-color: transparent !important;
+  width: 70%;
+  height: 60vh;
+  margin: 15% auto;
+  background-color: transparent !important;
 }
-.red {
-    background-color: red;
+.uploads {
+  background-color: rgba(233, 242, 242, 0.3);
 }
-.green {
-    background-color: green;
+.title {
+  color: #fff;
+  text-align: center;
+  font-family: "Marmelad", sans-serif;
+  text-transform: uppercase;
 }
-.yellow {
-    background-color: yellow;
-}
-
 .copyright {
-    position: absolute;
-    left: 500px;
-    color: #fff;
+  position: absolute;
+  left: 5%;
+  color: #fff;
+  font-family: "Marmelad", sans-serif;
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 1000px) {
+  .videos {
+    margin: 60% auto;
+  }
+
+  .carousel-iframe {
+    width: 660px;
+    height: 380px;
+  }
+}
+@media only screen and (max-width: 728px) {
+  .carousel-iframe {
+    width: 480px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .navbar,
+  .form-control,
+  .btn {
+    font-size: 0.8rem;
+  }
+  .videos {
+    margin: 90% auto;
+  }
+  .carousel-iframe {
+    width: 380px;
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  .videos {
+    margin: 100% auto;
+    width: 90%;
+  }
+
+  .carousel-iframe {
+    width: 390px;
+    height: 280px;
+  }
 }
